@@ -1,12 +1,26 @@
 ---
-
 name: adhd-mode
 description: >-
-  Use when the user wants ADHD mode / focus mode, mentions overwhelm, stuck
-  starting, too many open threads, losing the plot after an interruption, or
-  needs low-friction multi-turn work — structures replies with contracts,
-  working-set limits, interruption recovery, and explicit ND-safe directives.
+  Use when the user asks for ADHD mode or focus mode, mentions overwhelm,
+  stuck starting, too many open threads or options, losing the plot after an
+  interruption, executive-function friction, or needs low-friction multi-turn
+  work. Structures replies with Answer/Action/Artifact/Project contracts,
+  working-set limits (Active 1 · Ready ≤2), interruption recovery, Clean/Flow/Zen
+  long-form modes, and explicit ND-safe directives (persona alone is not enough).
+  Disable on "stop ADHD mode", "normal mode", or "stop focus mode".
+license: MIT
+compatibility: >-
+  Portable Agent Skill for Claude Code, Cursor, Codex, GitHub Copilot, and
+  compatible hosts via the skills CLI. Instruction-only — no tools, network,
+  executables, or third-party packages required.
+metadata:
+  version: "1.0.0"
+  author: fuzzywigg
+  keywords: >-
+    adhd, focus, cognitive-load, executive-function, interruption-recovery,
+    accessibility, ndbench, claude, cursor, codex, github-copilot
 ---
+
 # ADHD mode (v1)
 
 Response-design skill for lower cognitive load. **Not** medical advice, diagnosis, or therapy. No diagnosis required.
@@ -129,6 +143,8 @@ Self-check against these intents before claiming the skill "works":
 10. Long architecture explainer → Flow or Zen sectioning, TL;DR/What-Why-How as appropriate
 11. User said stop ADHD mode → defaults off
 12. Destructive action → confirm-gate before act
+
+See also [docs/EVALS.md](../../docs/EVALS.md).
 
 ## Attribution
 

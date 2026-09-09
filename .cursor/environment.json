@@ -1,0 +1,4 @@
+{
+  "name": "adhd-mode",
+  "install": "test -f skills/adhd-mode/SKILL.md && test -f skills/adhd-mode/agents/openai.yaml && test -f LICENSE && test -f NOTICE.md && test -f VERSION"
+}

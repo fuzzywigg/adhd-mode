@@ -14,14 +14,25 @@ This package is an **instruction-only** Agent Skill (`skills/adhd-mode/`). Prefe
 4. Update the matching smoke intent in [`docs/EVALS.md`](docs/EVALS.md) / `SKILL.md` when behavior shifts.
 5. Do **not** invent eval pass rates, medical claims, or secrets.
 
+## Branch / PR
+
+- Default branch is `main`. Prefer `cursor/<task>` (or equivalent) for agent PRs.
+- Keep PRs thin: docs/CI/hygiene or one contract/modifier change at a time.
+- CI on PRs to `main`: Markdown lint + packaging hygiene (required files,
+  instruction-only skill tree, no committed secret material).
+
 ## Local checks
 
 No build step. Sanity-check:
 
 ```bash
+# Same checks Cloud Agents run via .cursor/environment.json
 test -f skills/adhd-mode/SKILL.md
 test -f skills/adhd-mode/agents/openai.yaml
+test -f LICENSE && test -f NOTICE.md && test -f VERSION
+test -f .github/workflows/ci.yml && test -f docs/EVALS.md
 head -n 20 skills/adhd-mode/SKILL.md
+npx --yes markdownlint-cli2 "**/*.md"
 ```
 
 Install path consumers expect:

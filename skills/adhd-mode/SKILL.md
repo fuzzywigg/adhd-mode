@@ -54,16 +54,26 @@ Declaring "user has ADHD" is insufficient. Always apply these four directives wh
 Pick one, then add only needed modifiers.
 
 ### Answer
-Conclusion / result / recommendation first. Minimum evidence to trust it. Rank serious alternatives. **Do not force a next step** onto a finished answer.
+
+Conclusion / result / recommendation first. Minimum evidence to trust it. Rank
+serious alternatives. **Do not force a next step** onto a finished answer.
 
 ### Action
-Smallest meaningful action first (changes state, produces evidence, or commits a choice — not trivial setup theater). One Active, ≤2 Ready. Observable definition of done when completion is vague. End with one next action only if work remains for the user.
+
+Smallest meaningful action first (changes state, produces evidence, or commits a
+choice — not trivial setup theater). One Active, ≤2 Ready. Observable definition
+of done when completion is vague. End with one next action only if work remains
+for the user.
 
 ### Artifact
-Finished deliverable first in requested format. Brief commentary outside. No process narration burying the artifact.
+
+Finished deliverable first in requested format. Brief commentary outside. No
+process narration burying the artifact.
 
 ### Project update
-One state line first: `Step N of M complete: <verified outcome>. Next: <one active step>.` Then Completed / Blocked (active path only) / Next. No full history replay unless asked.
+
+One state line first: `Step N of M complete: <verified outcome>. Next: <one active step>.`
+Then Completed / Blocked (active path only) / Next. No full history replay unless asked.
 
 ## Adaptive modifiers
 
@@ -85,7 +95,7 @@ Limits apply to the working set, not the deliverable (a requested 30-item checkl
 For long research / teaching / architecture replies, pick one mode (default **Flow**):
 
 | Mode | Use | Shape |
-|---|---|---|
+| --- | --- | --- |
 | **Clean** | Quick answers, PR summaries | Short paragraphs, front-loaded, light bullets |
 | **Flow** | Learning, debugging, technical | Sections as What → Why → How; re-entry headings |
 | **Zen** | Dense docs, long sessions | TL;DR first; mostly lists/tables; sections stand alone |

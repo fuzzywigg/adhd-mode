@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](VERSION)
 [![Skill](https://img.shields.io/badge/skill-adhd--mode-0ea5e9.svg)](skills/adhd-mode/SKILL.md)
+[![CI](https://github.com/fuzzywigg/adhd-mode/actions/workflows/ci.yml/badge.svg)](https://github.com/fuzzywigg/adhd-mode/actions/workflows/ci.yml)
 
 **First-party ADHD / focus response-design skill** for coding agents and assistants.
 
@@ -64,6 +65,12 @@ Say **ADHD mode** or **focus mode**, or invoke the skill via `/` / `@` / `$` on 
 ## Attribution
 
 See [NOTICE.md](NOTICE.md). Synthesis cites 47 Tabs, hyperfocus, NDBench, and W3C COGA — **not a fork**.
+
+## Cloud agents
+
+Docs-only bootstrap lives in [`.cursor/environment.json`](.cursor/environment.json)
+(`install` verifies the skill package + CI workflow; no `start` services, no secrets).
+PR CI runs Markdown lint + packaging hygiene via [`.github/workflows/ci.yml`](.github/workflows/ci.yml).
 
 ## Contributing / security
 

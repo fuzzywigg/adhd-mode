@@ -1,0 +1,58 @@
+name: CI — Markdown Lint & Hygiene
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  markdown-lint:
+    name: Markdown Lint
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+      - name: Lint Markdown files
+        uses: DavidAnson/markdownlint-cli2-action@v24
+        with:
+          globs: "**/*.md"
+          config: .markdownlint.yaml
+
+  hygiene:
+    name: Hygiene
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Check required files
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -f NOTICE.md
+          test -f VERSION
+          test -f CONTRIBUTING.md
+          test -f SECURITY.md
+          test -f docs/EVALS.md
+          test -f skills/adhd-mode/SKILL.md
+          test -f skills/adhd-mode/agents/openai.yaml
+          test -f .cursor/environment.json
+          test -f .github/workflows/ci.yml
+
+      - name: Skill tree is instruction-only
+        run: |
+          # No executables, scripts, or unexpected binaries under the skill package
+          ! find skills/adhd-mode -type f \( -name '*.sh' -o -name '*.py' -o -name '*.js' -o -name '*.ts' -o -name '*.wasm' -o -name '*.exe' \) | grep .
+          find skills/adhd-mode -type f -print0 | xargs -0 -I{} test ! -x "{}"
+
+      - name: Check for committed secret material
+        run: |
+          ! grep -RInE '(api[_-]?key|secret|token|password)\s*[:=]\s*["'\'']?[A-Za-z0-9_\-]{8,}' \
+            --exclude-dir=.git \
+            --exclude='*.md' \
+            --exclude='*.yml' \
+            --exclude='*.yaml' \
+            .

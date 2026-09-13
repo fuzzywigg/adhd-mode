@@ -1,3 +1,15 @@
+# Local env / secrets (instruction-only package; keep empty of credentials)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor / OS noise
 .DS_Store
+.idea/
+.vscode/
+*.swp
+*~
 *.zip
 __pycache__/

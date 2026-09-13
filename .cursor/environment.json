@@ -1,4 +1,4 @@
 {
   "name": "adhd-mode",
-  "install": "test -f skills/adhd-mode/SKILL.md && test -f skills/adhd-mode/agents/openai.yaml && test -f LICENSE && test -f NOTICE.md && test -f VERSION"
+  "install": "test -f skills/adhd-mode/SKILL.md && test -f skills/adhd-mode/agents/openai.yaml && test -f LICENSE && test -f NOTICE.md && test -f VERSION && test -f .github/workflows/ci.yml && test -f docs/EVALS.md"
 }

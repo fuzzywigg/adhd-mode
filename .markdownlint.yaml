@@ -1,0 +1,20 @@
+# markdownlint configuration
+# Ref: https://github.com/DavidAnson/markdownlint
+
+default: true
+
+# Skill / NOTICE prose often exceeds 80; keep a soft cap for real runaways
+MD013:
+  line_length: 200
+  tables: false
+  code_blocks: false
+
+# Allow multiple top-level headings across package docs
+MD025: false
+
+# Allow inline HTML (badges / future host snippets)
+MD033: false
+
+# Allow duplicate headings across files
+MD024:
+  siblings_only: true

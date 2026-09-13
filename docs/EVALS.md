@@ -1,6 +1,9 @@
 # Thin evals (v1 smoke)
 
-`adhd-mode` ships a **manual smoke checklist**, not an automated scorer. The twelve intents below are the same ones listed in [`skills/adhd-mode/SKILL.md`](../skills/adhd-mode/SKILL.md). Use them as a self-check before claiming the skill "works" on a host.
+`adhd-mode` ships a **manual smoke checklist**, not an automated scorer.
+The twelve intents below are the same ones listed in
+[`skills/adhd-mode/SKILL.md`](../skills/adhd-mode/SKILL.md).
+Use them as a self-check before claiming the skill "works" on a host.
 
 No pass rates, benchmarks, or model-comparison scores are published here. Do not invent metrics.
 

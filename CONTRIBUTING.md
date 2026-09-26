@@ -26,11 +26,13 @@ This package is an **instruction-only** Agent Skill (`skills/adhd-mode/`). Prefe
 No build step. Sanity-check:
 
 ```bash
-# Same checks Cloud Agents run via .cursor/environment.json
+# File presence — same as .cursor/environment.json `install` (Cloud Agent bootstrap)
 test -f skills/adhd-mode/SKILL.md
 test -f skills/adhd-mode/agents/openai.yaml
 test -f LICENSE && test -f NOTICE.md && test -f VERSION
 test -f .github/workflows/ci.yml && test -f docs/EVALS.md
+
+# Extra local / CI-style checks (not part of environment.json install)
 head -n 20 skills/adhd-mode/SKILL.md
 npx --yes markdownlint-cli2 "**/*.md"
 ```

@@ -36,7 +36,8 @@ Copy `skills/adhd-mode/` (including `agents/openai.yaml`) into your agent’s sk
 
 ### OpenClaw / Geryon
 
-Already mirrored under `~/.openclaw/workspace/skills/adhd-mode/` on the live workspace when installed from this package. Grok Bot skill id: `adhd-mode`.
+Skills CLI (`-a openclaw`): project installs to `skills/adhd-mode`; global (`-g`) to
+`~/.openclaw/skills/adhd-mode`. Grok Bot skill id: `adhd-mode`.
 
 ## Usage
 

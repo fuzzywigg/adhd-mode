@@ -160,7 +160,10 @@ See also [docs/EVALS.md](../../docs/EVALS.md).
 
 First-party synthesis. Principles adapted (not forked) from:
 
-- [zgbrenner/adhd-and-47-tabs](https://github.com/zgbrenner/adhd-and-47-tabs) v3 (contracts, modifiers, working set, controls) — itself adapted from [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)
+- [webbrain-one/adhd-and-47-tabs](https://github.com/webbrain-one/adhd-and-47-tabs)
+  (ADHD & 47 Tabs v3; formerly `zgbrenner/adhd-and-47-tabs`) — contracts,
+  modifiers, working set, controls; itself adapted from
+  [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)
 - [nextor2k/hyperfocus](https://github.com/nextor2k/hyperfocus) (Clean / Flow / Zen sectioning)
 - Gupta & Buryi, *How Frontier LLMs Adapt to Neurodivergence Context*, arXiv:2605.00113 / [NDBench](https://github.com/ishansgupta/ndbench) (persona alone insufficient; C2-style explicit directives)
 - W3C COGA usable guidance (front-loading, chunking, scannable structure)

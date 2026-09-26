@@ -6,7 +6,10 @@
 
 Principles adapted (with modification) from:
 
-1. [zgbrenner/adhd-and-47-tabs](https://github.com/zgbrenner/adhd-and-47-tabs) v3 — contracts, modifiers, working-set protocol, conversation controls (MIT). That work itself adapts [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd).
+1. [webbrain-one/adhd-and-47-tabs](https://github.com/webbrain-one/adhd-and-47-tabs)
+   (ADHD & 47 Tabs v3; formerly `zgbrenner/adhd-and-47-tabs`) — contracts,
+   modifiers, working-set protocol, conversation controls (MIT). That work itself
+   adapts [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd).
 2. [nextor2k/hyperfocus](https://github.com/nextor2k/hyperfocus) — Clean / Flow / Zen long-form sectioning modes (MIT).
 3. Gupta & Buryi, *How Frontier LLMs Adapt to Neurodivergence Context*,
    [arXiv:2605.00113](https://arxiv.org/abs/2605.00113) /

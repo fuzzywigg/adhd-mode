@@ -24,7 +24,7 @@ npx skills add fuzzywigg/adhd-mode --skill adhd-mode
 | Host | Typical skill location after install |
 | --- | --- |
 | Claude Code | `.claude/skills/adhd-mode` |
-| Cursor | `.agents/skills/adhd-mode` (project; `~/.cursor/skills/` if `-g`) |
+| Cursor | `.agents/skills/adhd-mode` (project; `~/.agents/skills/adhd-mode` if `-g`) |
 | Codex / ChatGPT | `.agents/skills/adhd-mode` (or host default) |
 | GitHub Copilot | Agent Skills path used by your VS Code / Copilot setup |
 

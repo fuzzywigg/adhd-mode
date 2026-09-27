@@ -19,7 +19,8 @@ This package is an **instruction-only** Agent Skill (`skills/adhd-mode/`). Prefe
 - Default branch is `main`. Prefer `cursor/<task>` (or equivalent) for agent PRs.
 - Keep PRs thin: docs/CI/hygiene or one contract/modifier change at a time.
 - CI on PRs to `main`: Markdown lint + packaging hygiene (required files,
-  instruction-only skill tree, no committed secret material).
+  instruction-only skill tree, no committed secret material) + skill structure
+  unit tests under `tests/`.
 
 ## Local checks
 
@@ -35,6 +36,8 @@ test -f .github/workflows/ci.yml && test -f docs/EVALS.md
 # Extra local / CI-style checks (not part of environment.json install)
 head -n 20 skills/adhd-mode/SKILL.md
 npx --yes markdownlint-cli2 "**/*.md"
+pip install -r tests/requirements.txt
+python3 -m unittest discover -s tests -v
 ```
 
 Install path consumers expect:

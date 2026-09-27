@@ -1,4 +1,4 @@
-name: CI — Markdown Lint & Hygiene
+name: CI — Markdown Lint, Hygiene & Structure
 
 on:
   push:
@@ -41,6 +41,7 @@ jobs:
           test -f skills/adhd-mode/agents/openai.yaml
           test -f .cursor/environment.json
           test -f .github/workflows/ci.yml
+          test -f tests/test_skill_structure.py
 
       - name: Skill tree is instruction-only
         run: |
@@ -56,3 +57,19 @@ jobs:
             --exclude='*.yml' \
             --exclude='*.yaml' \
             .
+
+  skill-structure:
+    name: Skill Structure Tests
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install test dependencies
+        run: pip install -r tests/requirements.txt
+      - name: Run skill structure unit tests
+        run: python3 -m unittest discover -s tests -v
